@@ -1,0 +1,393 @@
+
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <style>
+        .offprog a {
+            text-transform: capitalize;
+            font-size: 15px;
+            color: white !important;
+        }
+    </style>
+    <style type="text/css">
+        .ApplightboxClass {
+            position: fixed;
+            top: 0%;
+            left: 0%;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.75);
+            display: none;
+        }
+
+            .ApplightboxClass iframe {
+                position: fixed;
+                top: 15%;
+                left: 15%;
+                width: 70%;
+                height: 70%;
+                border: none;
+            }
+
+        .cross {
+            top: 1%;
+            left: 81%;
+            position: fixed;
+            cursor: pointer;
+        }
+    </style>
+    <script type="text/javascript">
+        ////function abc(url) {
+        ////    var div = document.getElementById('Approvelightbox');
+        ////    document.getElementById('Showframe').src = url;
+        ////    $(div).fadeIn();
+        ////    $(div).fadeIn("slow");
+        ////    $(div).fadeIn(5000);
+        ////    $(div).onunload = FireAfterClosingWindow;
+
+        ////}
+
+        function abc(url) {
+            //var div;
+            var div = document.getElementById('Approvelightbox');
+            document.getElementById('Showframe').src = url;
+            div = window.open(url, 'PopUp', 'width=900, height=500,toolbar=no,menubar=no,location=no,addressbar=no,');
+
+            //div.onunload = FireAfterClosingWindow;
+            div.moveTo(400, 250);
+            div.focus();
+            //return false;
+        }
+
+        function HideDiv() {
+
+            var div = document.getElementById('Approvelightbox');
+            $(div).fadeOut("slow");
+
+        }
+        //     function FireAfterClosingWindow()
+        //   {
+        //     var RC = document.getElementById("CareerID");
+        //   var RP = document.getElementById("ProgramID");
+        // var ProgramType = document.getElementById("ProgramTypeID");
+        //     var CareerCombo = window.$find("");
+        //   CareerCombo.findItemByValue(ProgramType.innerText).select();
+        //   CareerCombo.disable();
+        //  var CareerCombo = window.$find("");
+        // CareerCombo.findItemByValue(RC.innerText).select();
+        // CareerCombo.disable();
+        // CareerCombo.set_key = RC.innerText
+        ////CareerCombo.set_value
+        ////CareerCombo(RC)
+        // var ProgramCombo = window.$find("");
+        //// ProgramCombo.set_id(RP)
+        //ProgramCombo.findItemByValue(RP.innerText).select();
+        //ProgramCombo.disable();
+        ////alert(RC.innerText);
+        //var lightBox = window.document.getElementById("Approvelightbox")
+        //div.attributes.style.value = "display: block;"
+
+        //}
+
+    </script>
+<meta charset="utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta name="viewport" content="width=device-width, initial-scale=1" /><meta name="description" /><meta name="author" /><title>
+	eDU BOARD - eDU SMARTZ 
+</title>
+    <!-- Style CSS -->
+    <link href="css/style.css" rel="stylesheet" /><link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" /><link rel="icon" href="images/favicon.ico" type="image/x-icon" /><link rel="stylesheet" href="design_framework/dist/css/Responsive.css" /><link rel="stylesheet" href="design_framework/dist/css/prism.css" /><link rel="stylesheet" href="design_framework/dist/css/intlTelInput.css" /><link rel="stylesheet" href="design_framework/dist/css/demo.css" /><link rel="stylesheet" href="design_framework/dist/css/countrySync.css" /><link id="ctl00_WholeCss" rel="stylesheet" href="design_framework/dist/css/Purple.css" />
+    <!-- Bootstrap Core CSS -->
+    <link href="design_framework/components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- MetisMenu CSS -->
+    <link href="design_framework/components/metisMenu/dist/metisMenu.min.css" rel="stylesheet" />
+
+    <!-- Timeline CSS -->
+    <link href="design_framework/dist/css/timeline.css" rel="stylesheet" />
+
+    <!-- Custom CSS -->
+
+    <!-- Morris Charts CSS -->
+    <link href="design_framework/components/morrisjs/morris.css" rel="stylesheet" />
+
+    <!-- Custom Fonts -->
+    <link href="design_framework/components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <!-- jQuery -->
+    <script src="../design_framework/components/jquery/dist/jquery.min.js"></script>
+    <script src="../design_framework/js/validator.min.js"></script>
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+<link href="/AdmissionPortal/WebResource.axd?d=0wLZfuEofPlE88HhroEQuh1Ija2o1moYo56XJ1NPJZdbYuwikoMoNcDBZtYbKsoIFCpYG4JWog4yWmkMgovOiwGl6VUIvGnViZk72siqd9rVybBwwPbT9DbfGdTngsXItKrxCROUaPrz-wANxlUP_A2&amp;t=636057312349657552" type="text/css" rel="stylesheet" class="Telerik_stylesheet" /><link href="/AdmissionPortal/WebResource.axd?d=XJwhJLkrLlDb0bSrQT8FcRpns7qJigHrDyac5XfSazoIatMMhQtGYi_d6BWDgdOsvhn04VYDu16MKhEbgeO0UbC3fCz_3EvGVF7L7o8B-1WPAyenHa5_KanaFnn9Ug5R_nSAsO_S2-cJf6viggpxDLAC72VsmIxpC5Vf4F8RjCw1&amp;t=636057312350125546" type="text/css" rel="stylesheet" class="Telerik_stylesheet" /></head>
+
+<body id="ctl00_BackgroundImage" class="body_applicant" style="background-image: url(../images/bg-reg.jpg);">
+    <!-- Google Tag Manager (noscript) -->
+    
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PXSP7RP"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    
+    <!-- End Google Tag Manager (noscript) -->
+    
+    <form name="aspnetForm" method="post" action="./Registration" id="aspnetForm">
+<div>
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJNTM1MjYzNTAwD2QWAmYPZBYEAgEPZBYCAhAPFgIeBGhyZWYFJy4uL2Rlc2lnbl9mcmFtZXdvcmsvZGlzdC9jc3MvUHVycGxlLmNzc2QCAw8WAh4Fc3R5bGUFLGJhY2tncm91bmQtaW1hZ2U6IHVybCguLi9pbWFnZXMvYmctcmVnLmpwZyk7FgJmD2QWAgIBD2QWDgIMD2QWAgIBDw8WCh4IQ3NzQ2xhc3MFG0xvZ29Cb3ggTG9nb0JveFJlZ2lzdHJhdGlvbh4FV2lkdGgbAAAAAABAakABAAAAHgZIZWlnaHQbAAAAAADAYkABAAAAHghJbWFnZVVybAVQfi9UZWxlcmlrLldlYi5VSS5XZWJSZXNvdXJjZS5heGQ/aW1naWQ9NjUzMmFhMmQzZDM4NGZhMzk4MTU4ZDA1MTllMGM2NjcmdHlwZT1yYmkeBF8hU0ICggNkZAIODxYCHglpbm5lcmh0bWwFwwFTU1VFVCB2aXNpb24gaXMgdG8gbWVldCB0aGUgZGVtYW5kcyBvZiBjaGFsbGVuZ2luZyB0aW1lcyBhcyBlbnZpc2lvbmVkIGJ5IFNpciBTeWVkIEFobWVkIEtoYW4gYnkgdHJhbnNmb3JtaW5nIFBha2lzdGFuIGludG8gYSBLbm93bGVkZ2UgYmFzZWQgc29jaWV0eSB0aHJvdWdoIHNvY2lhbCBpbXBhY3QgcHJvamVjdHMgYW5kIGlubm92YXRpb25kAiIPZBYEAgEPDxYCHgRUZXh0BQ9QcmVtaXNlcy9DYW1wdXNkZAIDD2QWAmYPZBYEAgEPFCsAAg8WFB4LXyFEYXRhQm91bmRnHg5EYXRhVmFsdWVGaWVsZAULQ2FtcHVzSURfUEseDklzSXRlbVNlbGVjdGVkZx8IBQVTU1VFVB4VRW5hYmxlRW1iZWRkZWRTY3JpcHRzZx4TY2FjaGVkU2VsZWN0ZWRWYWx1ZWQeF0VuYWJsZUFqYXhTa2luUmVuZGVyaW5naB4cRW5hYmxlRW1iZWRkZWRCYXNlU3R5bGVzaGVldGceElJlc29sdmVkUmVuZGVyTW9kZQspclRlbGVyaWsuV2ViLlVJLlJlbmRlck1vZGUsIFRlbGVyaWsuV2ViLlVJLCBWZXJzaW9uPTIwMTQuMi43MjQuNDUsIEN1bHR1cmU9bmV1dHJhbCwg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FCsAAgUKLSBTZWxlY3QgLWVkBSpjdGwwMCRDb250ZW50UGxhY2VIb2xkZXIxJGNtYkFkbWlzc2lvblR5cGUPFCsAAgUNTmV3IEFkbWlzc2lvbgUBMWQFK2N0bDAwJENvbnRlbnRQbGFjZUhvbGRlcjEkY21iSW5mcmFzdHJ1Y3R1cmUPFCsAAmVlZAUeX19Db250cm9sc1JlcXVpcmVQb3N0QmFja0tleV9fFgQFJmN0bDAwJENvbnRlbnRQbGFjZUhvbGRlcjEkY21iY2FtcHVzX2N0BTRjdGwwMCRDb250ZW50UGxhY2VIb2xkZXIxJGNtYkN1cnJlbnRRdWFsaWZpY2F0aW9uX2N0BSdjdGwwMCRDb250ZW50UGxhY2VIb2xkZXIxJGNtYlByb2dyYW1fY3QFKmN0bDAwJENvbnRlbnRQbGFjZUhvbGRlcjEkY21iQWRtaXNzaW9uVHlwZQUmY3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRjbWJjYW1wdXNfY3QPFCsAAgUFU1NVRVQFATFkBSdjdGwwMCRDb250ZW50UGxhY2VIb2xkZXIxJGNtYlByb2dyYW1fY3QPFCsAAmVlZA4pd7bMDFkh0jb4ZkQZOAtDkGdSgV74z6AV28Yl8VkN" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/AdmissionPortal/WebResource.axd?d=D7tlF49ElIl6tHoWtsQX-tWqm8mVSqV1YMDGtSBZOn5xb5-3k6Z_oRzSMSH4KMH_KDdepFZln5Bx-T0Qc8TDITveLEZDJJJEW3JNBdQS-Vw1&amp;t=637811909229275428" type="text/javascript"></script>
+
+
+<script src="/AdmissionPortal/ScriptResource.axd?d=s4MnMXtWs8Q_wN3JfLeegrUEstoFiAWEXI-DNAAAs2jw_PMwHgcvdmZQ8b8DKbRkpyKBTar6VmD_iUPk-gqqlJKVnxsg6Pyuic-_mPKuHt1FaChmW2FqVox5vKLXsXV8IU6MJ6KiymjJsPgL-WGHwlLP4QMSYijE2z-Sbpr3bObQ5R8k4-uMu8LMRe1FB2w50&amp;t=ffffffffaa493ab8" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');
+//]]>
+</script>
+
+<script src="/AdmissionPortal/ScriptResource.axd?d=CtAOcWEqq5Ry_jtgtJMmdckt41vf5x4gdhwIE_6rqSUoN2d2Ws3Tov8VCOsUbScvRqzXCQAPOgHtE4DpiaRYrqSTy0ESkD8edQjkMQjPjsOpoMaFdJdZ6MiBpxWiRkNdOJqVqx_QKgv5Eyhz2rCOnKMdFstEtlNS75sy5DzhtYmKCRkMyrLgE4r0wIteQLis0&amp;t=ffffffffaa493ab8" type="text/javascript"></script>
+<script src="/AdmissionPortal/ScriptResource.axd?d=-npT_-Q4FiQ0-bBC4YKuZ1dBQwXHe-7xL5LlJ38ItDbPv_A5PDwUIjLoJ9qCVQcYUc977bT0Hs8Efuh67rp2vTF6v1uDcNhc05hOAgk37NAAYFy0p_itqYapMw-7LfY888jrJZQ2kdJhKIGMZi9V4w2&amp;t=16fec49d" type="text/javascript"></script>
+<script src="/AdmissionPortal/ScriptResource.axd?d=9w7tuwmwd1Du9xpigO-QZu8bpoF4PHyH-u0tJk-aNOi0aN1m6aRTjj0qHhTmd6KQC-mP6-DU3VpcWSH3T-TM89TF3ncP1hx5qVWo4fCylaQID3ruOEAviFmsaTeH172MTjaeSYtZrMn635l0CPOGEQ2&amp;t=16fec49d" type="text/javascript"></script>
+<script src="/AdmissionPortal/ScriptResource.axd?d=_roygQeZa1DiQvFb5c65us-GIu7hkdKCcRn30iTt1QUFM9voIMkELEB6WWz6t8G9oxWN7mqiy9UK-xgxlYeoc6egFk0MdXpAwr-sPSUAybDlad-qcQvS3s_hyQwtHI8CZ-7PvaZckX47b4_Y-TQH9Q2&amp;t=16fec49d" type="text/javascript"></script>
+<script src="/AdmissionPortal/ScriptResource.axd?d=xeokzXKGqwlWpLDbhPOumHhfxons8LdEYUQJL7LjhzpoI88W4gMxRamboXHRNW2LlQ4getfh-qZJ7niNdE26-1TkBVTxZVJBqdUnga6Ha_8Rtoyc2Eaa9O5ZvcwJSxAG0Il87d81UqtWp4NLkyeTAY5LIpuYn5kN1XSFUGCp9rk1&amp;t=16fec49d" type="text/javascript"></script>
+<script src="/AdmissionPortal/ScriptResource.axd?d=NWu_nOuYDSdtpzfWfnhywWo4KVjtwJXGe42Z32tAcvbLI8rj1o-z3NA4JqkLT9ZLrBfmzhZ3kywsdvPbtCX1D1yQErXjScqoMMP00sMzAKzWBvljhO9woLXYOZX1gQrr4muCg1KHXsP_D-2JiWTd-ZSPXgF8V92AZZjx3czlebk1&amp;t=16fec49d" type="text/javascript"></script>
+<script src="/AdmissionPortal/ScriptResource.axd?d=X9_GeRuB5lgBbtB94X8WJs6JblcztxKmxRYBTbQuadfG2ugLbx4OrtFLlfIFkkvlwblynkCB5zYq83piy0IKoYMTpdSpKOtE6VAeT5ZfDYhZQ-XtHVCfeJUDA0YKJQtTAueWqJmDX1Yut5_2DVdUUdU2b1RS90cs9g6gGMySj941&amp;t=16fec49d" type="text/javascript"></script>
+<script src="/AdmissionPortal/ScriptResource.axd?d=JUgxXH7l_KhwEiCvNUd7ZZW3GroSY5Q6wAmuEhzljWi5vTMUmvv4cJstcbCIhjjTAjXjtxJh0aVJ1D1-ZKdRMm8qFXrz4BY6TT9y4-3Hvnbh4bwA6Rr5sth32sdj3WcnYFgBBC9EnAyWSckeHDefhxVJ1Udp5aF6mXGJUDq-xXE1&amp;t=16fec49d" type="text/javascript"></script>
+<script src="/AdmissionPortal/ScriptResource.axd?d=nrrDxwxIj0qs48zzdFO9G7r9xJ31nkvi6mzHfn7hDbok_cRs0vffvLXZvpZB20KlVTK0Bz_Cb2_QVcZ5WUS_sPL49UQ7nacyKAC8EepEFzLDS2cYT7JwOf8CUjF4mIm7cQ2S5D0alKpIVjfpY-608dI-mB6KQQml1AwzCxjoxvE1&amp;t=16fec49d" type="text/javascript"></script>
+<script src="/AdmissionPortal/ScriptResource.axd?d=SmIAuQQefS8DVF-G9w0626lrxukxecwgW9W6OT6HBS88fPSOOHxzDqy9J2_9abjtSEOoqMXixfKsS-4hlTpgdvQADZxYTWoQ-M61umNuXCk8CS90BS14CMmKVy6Q8zGboA_D71_Ap5acecosk8eeDMLRbkE-OBZoIgu1Hs7qmWU1&amp;t=16fec49d" type="text/javascript"></script>
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="6A6A2BC8" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAppY6bR/+fVL1WJbMld+ZGBEw+s7DyHu5JK5APzPHDVOwixpP01nhd1C/6/xFGZH0GO0R48srMbbRDo08H9afdhRhUbm9MJh/VBDa+PiT/shKRKoX6hJjakmB6u3mchSTGjnYOictc0Z0W3WjR4UzXaZA+nSF3spoALQY6r4ddwoycUs0wSIzFhC8B/WVaCUuvXReQSs/GcaC00Lwt+cLQxRFCC2A02RpUH+S43igHLYKAeFAZUj/4qKf6xpIYc5qc=" />
+</div>
+        <div>
+            
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ContentPlaceHolder1$ScriptManager1', 'aspnetForm', ['tctl00$ContentPlaceHolder1$UpdatePanel6','','tctl00$ContentPlaceHolder1$UpdatePanel5','','tctl00$ContentPlaceHolder1$UpdatePanel4','','tctl00$ContentPlaceHolder1$UpdatePanel2','','tctl00$ContentPlaceHolder1$UpdatePanel7',''], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+    <div>
+        
+        <div class="row logo">
+            <img src="../images/edusmartz.png" />
+        </div>
+        <div class="container">
+            <input type="hidden" name="ctl00$ContentPlaceHolder1$HdnInfra" id="ctl00_ContentPlaceHolder1_HdnInfra" value="False" />
+            <input type="hidden" name="ctl00$ContentPlaceHolder1$HiddenField1" id="ctl00_ContentPlaceHolder1_HiddenField1" />
+            <input type="hidden" name="ctl00$ContentPlaceHolder1$HiddenField2" id="ctl00_ContentPlaceHolder1_HiddenField2" />
+            <label id="CareerID"></label>
+            <label id="ProgramID"></label>
+            <label id="ProgramTypeID"></label>
+            <div class="col-md-12  form_container">
+                <div class="col-md-4 form_text portal_text">
+                    
+                    <div id="ctl00_ContentPlaceHolder1_LogoBox">
+                        <img id="ctl00_ContentPlaceHolder1_CompanyLogo" class="LogoBox LogoBoxRegistration" src="Telerik.Web.UI.WebResource.axd?imgid=6532aa2d3d384fa398158d0519e0c667&amp;type=rbi" style="height:150px;width:210px;" />
+                    </div>
+
+                    <h4>Welcome to<br />
+                        Admission Portal</h4>
+                    <hr class="form_text-line" />
+                    <p id="ctl00_ContentPlaceHolder1_PortalDescription">SSUET vision is to meet the demands of challenging times as envisioned by Sir Syed Ahmed Khan by transforming Pakistan into a Knowledge based society through social impact projects and innovation</p>
+                </div>
+
+                <div class="col-md-8 form">
+                    <div id="ctl00_ContentPlaceHolder1_UpdatePanel6">
+	
+                            <h5 id="ctl00_ContentPlaceHolder1_alert"></h5>
+                        
+</div>
+                    <div id="reg_frm" role="form" data-toggle="validator">
+
+                        <div class="">
+                            <div class="col-md-6 form-group">
+                                <span id="ctl00_ContentPlaceHolder1_lblregname" class="control-label col-sm-8 label_lgn">Name:<span class='required_field'></span></span>
+                                <input name="ctl00$ContentPlaceHolder1$txtregname_cs" type="text" id="ctl00_ContentPlaceHolder1_txtregname_cs" tabindex="1" class="form-control" pattern="[a-zA-Z\s]+" required="required" data-toggle="popover" data-placement="auto" data-trigger="focus" data-original-title="Hint" data-content="Enter your name, as mentioned in your SSC/ O-levels certificate." />
+
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <span id="ctl00_ContentPlaceHolder1_lblcontactnumber" class="control-label col-sm-12 col-xs-12 label_lgn">Cell#<span class='required_field'></span></span>
+                                <input name="ctl00$ContentPlaceHolder1$phone_ct" value="+92" maxlength="16" id="ctl00_ContentPlaceHolder1_phone_ct" tabindex="2" data-trigger="focus" data-placement="auto" pattern=".{10,}" MinLength="13" class="form-control phone" data-original-title="Hint" type="tel" data-content="Number must be active, future correspondence through this mobile number" data-toggle="popover" />
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <span id="ctl00_ContentPlaceHolder1_lblregemail" class="control-label col-sm-12 col-xs-12 label_lgn">Email:<span class='required_field'></span></span>
+                                <input name="ctl00$ContentPlaceHolder1$txtregemail_ce" type="email" id="ctl00_ContentPlaceHolder1_txtregemail_ce" tabindex="3" data-trigger="focus" required="required" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,63}$" class="form-control" data-error="Email Format abc@gmail.com" data-content="Email address should be in small characters. A valid email address is required for registration. An email will be sent to you from the admission office for updates and information. Please ensure you have access to the email address you provide." data-placement="auto" data-original-title="Hint" data-toggle="popover" />
+
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <span id="ctl00_ContentPlaceHolder1_lblregpassword" class="control-label col-sm-12 col-xs-12 label_lgn">Password:<span class='required_field'></span></span>
+                                <input name="ctl00$ContentPlaceHolder1$txtregpassword" type="password" id="ctl00_ContentPlaceHolder1_txtregpassword" tabindex="4" class="form-control" required="required" data-toggle="popover" data-placement="auto" data-trigger="focus" data-original-title="Hint" data-content="Use atleast 8 characters to create a password. This login will allow access to sensitive information, please ensure the password is secure." pattern=".{8,128}" />
+
+                            </div>
+                            <div id="ctl00_ContentPlaceHolder1_Campus">
+                                <div class="col-md-6 form-group">
+                                    <span id="ctl00_ContentPlaceHolder1_lblCampus" class="control-label col-sm-12 label_lgn">Premises/Campus</span>
+                                    <div id="ctl00_ContentPlaceHolder1_UpdatePanel5">
+	
+                                            <div id="ctl00_ContentPlaceHolder1_cmbcampus_ct" class="RadComboBox RadComboBox_Metro select" style="width:160px;white-space:normal;">
+		<!-- 2014.2.724.45 --><table summary="combobox" border="0" style="border-width:0;border-collapse:collapse;width:100%">
+			<tr class="rcbReadOnly">
+				<td class="rcbInputCell rcbInputCellLeft" style="width:100%;"><input name="ctl00$ContentPlaceHolder1$cmbcampus_ct" type="text" class="rcbInput radPreventDecorate" id="ctl00_ContentPlaceHolder1_cmbcampus_ct_Input" value="SSUET" readonly="readonly" tabindex="5" /></td><td class="rcbArrowCell rcbArrowCellRight"><a id="ctl00_ContentPlaceHolder1_cmbcampus_ct_Arrow" style="overflow: hidden;display: block;position: relative;outline: none;">select</a></td>
+			</tr>
+		</table><div class="rcbSlide" style="z-index:6000;"><div id="ctl00_ContentPlaceHolder1_cmbcampus_ct_DropDown" class="RadComboBoxDropDown RadComboBoxDropDown_Metro " style="display:none;"><div class="rcbScroll rcbWidth" style="height:200px;width:100%;"><ul class="rcbList" style="list-style:none;margin:0;padding:0;zoom:1;"><li class="rcbItem">- Select -</li><li class="rcbItem">SSUET</li></ul></div></div></div><input id="ctl00_ContentPlaceHolder1_cmbcampus_ct_ClientState" name="ctl00_ContentPlaceHolder1_cmbcampus_ct_ClientState" type="hidden" />
+	</div>
+                                            
+                                        
+</div>
+                                </div>
+                            </div>
+
+                            <div id="ctl00_ContentPlaceHolder1_qualification">
+                                <div class="col-md-6 form-group">
+                                    <span id="ctl00_ContentPlaceHolder1_lblcurrentqualification" class="control-label col-sm-12 label_lgn">LastQualification</span>
+                                    <div id="ctl00_ContentPlaceHolder1_UpdatePanel4">
+	
+                                            <div id="ctl00_ContentPlaceHolder1_cmbCurrentQualification_ct" class="RadComboBox RadComboBox_Metro select" style="width:160px;white-space:normal;">
+		<table summary="combobox" border="0" style="border-width:0;border-collapse:collapse;width:100%">
+			<tr class="rcbReadOnly">
+				<td class="rcbInputCell rcbInputCellLeft" style="width:100%;"><input name="ctl00$ContentPlaceHolder1$cmbCurrentQualification_ct" type="text" class="rcbInput radPreventDecorate" id="ctl00_ContentPlaceHolder1_cmbCurrentQualification_ct_Input" value="- Select -" readonly="readonly" tabindex="6" /></td><td class="rcbArrowCell rcbArrowCellRight"><a id="ctl00_ContentPlaceHolder1_cmbCurrentQualification_ct_Arrow" style="overflow: hidden;display: block;position: relative;outline: none;">select</a></td>
+			</tr>
+		</table><div class="rcbSlide" style="z-index:6000;"><div id="ctl00_ContentPlaceHolder1_cmbCurrentQualification_ct_DropDown" class="RadComboBoxDropDown RadComboBoxDropDown_Metro " style="display:none;"><div class="rcbScroll rcbWidth" style="width:100%;"><ul class="rcbList" style="list-style:none;margin:0;padding:0;zoom:1;"><li class="rcbItem">- Select -</li><li class="rcbItem">HSC/ A-Level / DAE</li><li class="rcbItem">Bachelors(16 years) or equivalent</li><li class="rcbItem">Masters</li><li class="rcbItem">Bachelors(14 years)</li></ul></div></div></div><input id="ctl00_ContentPlaceHolder1_cmbCurrentQualification_ct_ClientState" name="ctl00_ContentPlaceHolder1_cmbCurrentQualification_ct_ClientState" type="hidden" />
+	</div>
+                                        
+</div>
+                                </div>
+                            </div>
+
+                            <div id="ctl00_ContentPlaceHolder1_Program">
+                                <div class="col-md-12 form-group">
+                                    <span id="ctl00_ContentPlaceHolder1_lblprogram" class="control-label col-sm-12 label_lgn">Program Interested In:<span class='required_field'></span></span>
+                                    <div id="ctl00_ContentPlaceHolder1_UpdatePanel2">
+	
+                                            <div id="ctl00_ContentPlaceHolder1_cmbProgram_ct" class="RadComboBox RadComboBox_Metro select" style="width:160px;white-space:normal;">
+		<table summary="combobox" border="0" style="border-width:0;border-collapse:collapse;width:100%">
+			<tr class="rcbReadOnly">
+				<td class="rcbInputCell rcbInputCellLeft" style="width:100%;"><input name="ctl00$ContentPlaceHolder1$cmbProgram_ct" type="text" class="rcbInput radPreventDecorate" id="ctl00_ContentPlaceHolder1_cmbProgram_ct_Input" value="" readonly="readonly" tabindex="7" /></td><td class="rcbArrowCell rcbArrowCellRight"><a id="ctl00_ContentPlaceHolder1_cmbProgram_ct_Arrow" style="overflow: hidden;display: block;position: relative;outline: none;">select</a></td>
+			</tr>
+		</table><div class="rcbSlide" style="z-index:6000;"><div id="ctl00_ContentPlaceHolder1_cmbProgram_ct_DropDown" class="RadComboBoxDropDown RadComboBoxDropDown_Metro " style="display:none;"><div class="rcbScroll rcbWidth" style="height:200px;width:100%;"></div></div></div><input id="ctl00_ContentPlaceHolder1_cmbProgram_ct_ClientState" name="ctl00_ContentPlaceHolder1_cmbProgram_ct_ClientState" type="hidden" />
+	</div>
+                                            <span id="ctl00_ContentPlaceHolder1_lblProgramDept" class="control-label col-sm-12 label_lgn"></span>
+                                        
+</div>
+                                </div>
+                            </div>
+
+                            
+                            
+                            <div id="ctl00_ContentPlaceHolder1_Admission">
+                                <div class="col-md-6 form-group">
+                                    <span id="ctl00_ContentPlaceHolder1_lblAdmission" class="control-label col-sm-12 label_lgn">Admission Type:<span class='required_field'></span></span>
+                                    <div id="ctl00_ContentPlaceHolder1_UpdatePanel7">
+	
+                                            <div id="ctl00_ContentPlaceHolder1_cmbAdmissionType" class="RadComboBox RadComboBox_Metro select" style="width:160px;white-space:normal;">
+		<table summary="combobox" border="0" style="border-width:0;border-collapse:collapse;width:100%">
+			<tr class="rcbReadOnly">
+				<td class="rcbInputCell rcbInputCellLeft" style="width:100%;"><input name="ctl00$ContentPlaceHolder1$cmbAdmissionType" type="text" class="rcbInput radPreventDecorate" id="ctl00_ContentPlaceHolder1_cmbAdmissionType_Input" value="New Admission" readonly="readonly" tabindex="8" /></td><td class="rcbArrowCell rcbArrowCellRight"><a id="ctl00_ContentPlaceHolder1_cmbAdmissionType_Arrow" style="overflow: hidden;display: block;position: relative;outline: none;">select</a></td>
+			</tr>
+		</table><div class="rcbSlide" style="z-index:6000;"><div id="ctl00_ContentPlaceHolder1_cmbAdmissionType_DropDown" class="RadComboBoxDropDown RadComboBoxDropDown_Metro " style="display:none;"><div class="rcbScroll rcbWidth" style="width:100%;"><ul class="rcbList" style="list-style:none;margin:0;padding:0;zoom:1;"><li class="rcbItem">- Select -</li><li class="rcbItem">New Admission</li></ul></div></div></div><input id="ctl00_ContentPlaceHolder1_cmbAdmissionType_ClientState" name="ctl00_ContentPlaceHolder1_cmbAdmissionType_ClientState" type="hidden" />
+	</div>
+
+                                        
+</div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-md-7 form-group offprog">
+                                <a id="ctl00_ContentPlaceHolder1_lnkPST" href="https://edusmartz.ssuet.edu.pk/AdmissionPortal/Downloads/ProgramSelectionDetails.pdf" target="_blank">Click here to view offered program details</a>
+                            </div>
+
+                            <div class="form-group col-md-12">
+                                <input type="submit" name="ctl00$ContentPlaceHolder1$btnreg" value="Register" id="ctl00_ContentPlaceHolder1_btnreg" tabindex="8" class="btn_theme reg_btn btnGap" />
+                                <div class="links LnkLogin">
+                                    <span><b>
+                                        <a id="ctl00_ContentPlaceHolder1_LnkLogin" class="underline" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$LnkLogin&#39;,&#39;&#39;)"><span style="text-transform:capitalize">Already registered?</span> <span style="font-weight:bold;">LOGIN HERE</span></a>
+                                    </b></span>
+
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-md-9 col-md-offset-3">
+                                    <div id="messages"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="Approvelightbox" class="ApplightboxClass">
+            <iframe id="Showframe" width="890px" height="250px"></iframe>
+            <img src="~/images/cross.png" onclick="HideDiv();" alt="Close" class="cross" />
+        </div>
+
+    </div>
+
+
+
+    <script>
+        $('#reg_frm').validator();
+    </script>
+
+
+        </div>
+    
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DFBY1Z7K52"></script><script type="text/javascript"> window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag("js", new Date()); gtag("config", "G-DFBY1Z7K52");</script>
+<script type="text/javascript">
+//<![CDATA[
+
+var callBackFrameUrl='/AdmissionPortal/WebResource.axd?d=4dZAKNfTUVS80l1tRfowCQSMvvXdHmaZoM0aynTxs6lBwzmgoIoo8zUCu1TeupvUq8La5KiBpQD0IAUsYiw_nfCB1QpXbnNGJruCXZmzTp81&t=637811909229275428';
+WebForm_InitCallback();Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadComboBox, {"_dropDownWidth":0,"_height":200,"_postBackReference":"__doPostBack(\u0027ctl00$ContentPlaceHolder1$cmbcampus_ct\u0027,\u0027arguments\u0027)","_skin":"Metro","_text":"SSUET","_uniqueId":"ctl00$ContentPlaceHolder1$cmbcampus_ct","_value":"1","clientStateFieldID":"ctl00_ContentPlaceHolder1_cmbcampus_ct_ClientState","collapseAnimation":"{\"duration\":450}","expandAnimation":"{\"duration\":450}","itemData":[{},{"value":"1","selected":true}],"localization":"{\"AllItemsCheckedString\":\"All items checked\",\"ItemsCheckedString\":\"items checked\",\"CheckAllString\":\"Check All\"}","selectedIndex":1}, null, null, $get("ctl00_ContentPlaceHolder1_cmbcampus_ct"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadComboBox, {"_dropDownWidth":0,"_height":0,"_postBackReference":"__doPostBack(\u0027ctl00$ContentPlaceHolder1$cmbCurrentQualification_ct\u0027,\u0027arguments\u0027)","_skin":"Metro","_text":"- Select -","_uniqueId":"ctl00$ContentPlaceHolder1$cmbCurrentQualification_ct","clientStateFieldID":"ctl00_ContentPlaceHolder1_cmbCurrentQualification_ct_ClientState","collapseAnimation":"{\"duration\":450}","expandAnimation":"{\"duration\":450}","itemData":[{"selected":true},{"value":"5"},{"value":"6"},{"value":"10"},{"value":"112"}],"localization":"{\"AllItemsCheckedString\":\"All items checked\",\"ItemsCheckedString\":\"items checked\",\"CheckAllString\":\"Check All\"}","selectedIndex":0}, null, null, $get("ctl00_ContentPlaceHolder1_cmbCurrentQualification_ct"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadComboBox, {"_dropDownWidth":0,"_maxHeight":200,"_postBackReference":"__doPostBack(\u0027ctl00$ContentPlaceHolder1$cmbProgram_ct\u0027,\u0027arguments\u0027)","_skin":"Metro","_uniqueId":"ctl00$ContentPlaceHolder1$cmbProgram_ct","clientStateFieldID":"ctl00_ContentPlaceHolder1_cmbProgram_ct_ClientState","collapseAnimation":"{\"duration\":450}","expandAnimation":"{\"duration\":450}","itemData":[],"localization":"{\"AllItemsCheckedString\":\"All items checked\",\"ItemsCheckedString\":\"items checked\",\"CheckAllString\":\"Check All\"}"}, null, null, $get("ctl00_ContentPlaceHolder1_cmbProgram_ct"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadComboBox, {"_dropDownWidth":0,"_height":0,"_postBackReference":"__doPostBack(\u0027ctl00$ContentPlaceHolder1$cmbAdmissionType\u0027,\u0027arguments\u0027)","_skin":"Metro","_text":"New Admission","_uniqueId":"ctl00$ContentPlaceHolder1$cmbAdmissionType","_value":"1","clientStateFieldID":"ctl00_ContentPlaceHolder1_cmbAdmissionType_ClientState","collapseAnimation":"{\"duration\":450}","expandAnimation":"{\"duration\":450}","itemData":[{},{"value":"1","selected":true}],"localization":"{\"AllItemsCheckedString\":\"All items checked\",\"ItemsCheckedString\":\"items checked\",\"CheckAllString\":\"Check All\"}","selectedIndex":1}, null, null, $get("ctl00_ContentPlaceHolder1_cmbAdmissionType"));
+});
+//]]>
+</script>
+</form>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../design_framework/components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+        $('[data-toggle="popover"]').popover({
+            container: 'body'
+        });
+    </script>
+    <script src="../design_framework/js/intlTelInput.js"></script>
+    <script src="../design_framework/js/countrySync.js"></script>
+
+</body>
+
+</html>
