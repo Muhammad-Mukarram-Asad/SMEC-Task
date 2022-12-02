@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="SSUET Form.css">
+</head>
+
+<body>
+    <div class="container">
+        
+            <div class="main_form_div">
+
+                <div class="left_part">
+                    <img src="./images/ssuet logo.png" alt="">
+                    <h2>Welcome to <br> Admission Portal</h2>
+                    <p>
+                        SSUET vision is to meet the demands of challenging <br> times as
+                        envisioned by Sir Syed Ahmed Khan by <br> transforming Pakistan
+                        into a Knowledge based society <br> through social impact projects and
+                        innovation
+                    </p>
+                </div>
+
+                <form action="no-action.php">
+                <div class="main_div">
+                    <div class="inner_div">
+                        <div class="label_input">
+                            <label for="">Name</label>
+                            <input type="text" maxlength="20">
+                        </div>
+
+                        <div class="label_input">
+                            <label for="">Cell#</label>
+                            <input type="tel" minlength="8" maxlength="11">
+                        </div>
+
+                    </div>
+
+                    <div class="inner_div">
+                        <div class="label_input">
+                            <label for="">Email</label>
+                            <input type="email" required>
+                        </div>
+
+                        <div class="label_input">
+                            <label for="">Password</label>
+                            <input type="Password" minlength="8" maxlength="10" required>
+                        </div>
+
+                    </div>
+
+                    <div class="inner_div">
+                        <div class="label_input">
+                            <label for="">Premises/Campus</label>
+                            <select id="select">
+                                <option value=""> SSUET</option>
+                                <option value=""> UOK</option>
+                                <option value=""> NED</option>
+                            </select>
+                        </div>
+
+                        <div class="label_input">
+                            <label for="">Last Qualification</label>
+                            <select id="select">
+                                <option value=""> Matric</option>
+                                <option value=""> Intermediate</option>
+                                <option value=""> UnderGraduate</option>
+                                <option value=""> PostGraduate</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="complete_inner_div">
+                        <label for="">Program Interested In</label>
+                        <select>
+                            <option value=""> BSCS</option>
+                            <option value=""> BSSE</option>
+                            <option value=""> BSIT</option>
+                            <option value=""> ME</option>
+                            <option value=""> EE</option>
+                            <option value=""> CE</option>
+                            <option value=""> BBA</option>
+                        </select>
+
+                    </div>
+
+                    <div class="complete_inner_div">
+                        <label for="">Admission Type</label>
+                        <select>
+                            <option value="" selected> New Admission</option>
+                            <option value="">2020 Batch </option>
+                            <option value=""> 2021 Batch</option>
+                            <option value=""> 2022 Batch</option>
+                        </select>
+
+                    </div>
+                    <button type="submit">Submit Here</button>
+                </form>
+
+                </div>
+            </div>
+       
+
+    </div>
+
+</body>
+
+</html>

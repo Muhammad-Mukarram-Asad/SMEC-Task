@@ -1,0 +1,117 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    scroll-behavior: smooth;
+}
+
+.container
+{
+    background-image: url("https://edusmartz.ssuet.edu.pk//images/bg-reg.jpg");
+    background-size: cover;
+    background-position:center;
+    width: 100%;
+    height: 100vh;
+}
+
+.main_form_div{
+    position: absolute;
+    width: 80%;
+    height: 550px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 10%;
+    margin-top: 40px;
+    background: linear-gradient(to right, rgba(16, 16, 16, 0.6), rgba(0, 0, 0, 0.6), rgba(16, 16, 16, 0.6));
+    padding-top: 200px;
+
+}
+.left_part
+{
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    margin-top: -250px;
+}
+.left_part img
+{
+    width: 200px;
+    height: 200px;
+}
+.left_part h2,p{
+    color: white;
+}
+.left_part h2{
+    font-family:'Times New Roman', Times, serif;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+.left_part p{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.2;
+}
+
+.main_div
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: -30%;
+}
+
+.inner_div{
+    display: flex;
+    flex-direction: row;
+   
+}
+
+.label_input{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+.label_input label{
+    font-size: 22px;
+    color: white;
+}
+.label_input input{
+    width:300px;
+    height: 30px;
+    border: 2px solid black;
+}
+#select{
+    width: 300px;
+    height: 30px;
+    cursor: pointer;
+
+}
+.complete_inner_div
+{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+.complete_inner_div select
+{
+    width: 400px;
+    height: 40px;
+    cursor: pointer;
+
+}
+.complete_inner_div label
+{
+    color: white;
+    font-size: 22px;
+}
+option{
+    font-size: 20px;
+    color: white;
+    background-color: black;
+}
